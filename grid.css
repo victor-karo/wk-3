@@ -1,0 +1,35 @@
+main{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,250px);
+    gap: 1em;
+}
+
+section{
+    border: 5px solid blue;
+}
+section:first-of-type{
+    border-radius: 1em 0 1em 0;
+}
+section:last-of-type{
+    border-radius: 0 2em 0 2em;
+}
+section:nth-of-type(even){
+    border-radius: 0 2em 0 2em;
+}
+section:nth-of-type(odd){
+    border-radius: 2em 0 2em 0;
+}
+section:nth-of-type(2n+2){
+    border: 5px solid red;
+    border-radius:0 2em 0 2em;
+}
+   section:nth-child(odd){
+    background-color: #ccc;
+    color: #000;
+   }
+section :nth-child(odd){
+    background-color: #00ffff;
+    color: #808080;
+}
